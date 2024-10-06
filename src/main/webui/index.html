@@ -1,13 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quinoa App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Quarkus Quinoa Starter</title>
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div id="app">
+		<div>
+			<a href="https://vitejs.dev" target="_blank">
+				<img src="vite.svg" class="logo" alt="Vite logo" />
+			</a>
+			<a href="https://docs.quarkiverse.io/quarkus-quinoa/dev/web-frameworks.html" target="_blank">
+				<img src="quarkus.svg" class="logo vanilla" alt="Quarkus logo" />
+			</a>
+			<h1>Hello From Quarkus Quinoa Extension!</h1>
+
+			<div class="card">
+				<button id="counter"></button>
+			</div>
+
+			<div class="card">
+				<button id="hello">Call "/hello" Endpoint</button>
+			</div>
+
+			<div id="hello">
+			</div>
+
+			<p class="read-the-docs">
+				Quinoa is a Quarkus extension which eases the development, the build and serving of single page apps or
+				web components (built with npm : React, Angular, Vue, Lit, Svelte, Astro, SolidJS …) alongside Quarkus.
+				It is possible to use it with a Quarkus backend in a single project.
+			</p>
+		</div>
+
+	</div>
+
+	<script type="module" src="/main.js"></script>
+
+</body>
+
 </html>

@@ -1,47 +1,53 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8" />
-	<title>Quarkus Quinoa Starter</title>
-	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
-	<link rel="stylesheet" href="style.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Quarkus Quinoa Starter</title>
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="stylesheet" href="/src/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
 
-<body>
-	<div id="app">
-		<div>
-			<a href="https://vitejs.dev" target="_blank">
-				<img src="vite.svg" class="logo" alt="Vite logo" />
-			</a>
-			<a href="https://docs.quarkiverse.io/quarkus-quinoa/dev/web-frameworks.html" target="_blank">
-				<img src="quarkus.svg" class="logo vanilla" alt="Quarkus logo" />
-			</a>
-			<h1>Hello From Quarkus Quinoa Extension!</h1>
-
-			<div class="card">
-				<button id="counter"></button>
+	<body>
+		<div class="max-w-5xl mx-auto p-8 text-center">
+			<div class="flex flex-row items-center justify-center gap-4">
+				<a href="https://vitejs.dev" target="_blank">
+					<img src="/src/vite.svg" class="logo" alt="Vite logo" />
+				</a>
+				<a href="https://docs.quarkiverse.io/quarkus-quinoa/dev/web-frameworks.html" target="_blank">
+					<img src="/src/quarkus.svg" class="logo vanilla" alt="Quarkus logo" />
+				</a>
 			</div>
 
-			<div class="card">
-				<button id="hello">Call "/hello" Endpoint</button>
+			<h1 style="font-size: 3rem; line-height: 1.1;">Hello From Quarkus Quinoa Extension!</h1>
+
+			<div style="padding: 2rem;">
+				<button id="counter"
+					style="border-radius: 0.5rem; border: 1px solid transparent; padding: 0.5rem 0.75rem; font-size: 1rem; font-weight: 500; background-color: #171717; cursor: pointer; transition: border-color 0.2s;">
+				</button>
+			</div>
+
+			<div style="padding: 2rem;">
+				<button id="hello"
+					style="border-radius: 0.5rem; border: 1px solid transparent; padding: 0.5rem 0.75rem; font-size: 1rem; font-weight: 500; background-color: #171717; cursor: pointer; transition: border-color 0.2s;">Call
+					"/hello" Endpoint</button>
 			</div>
 
 			<div id="hello">
 			</div>
 
-			<p class="read-the-docs">
+			<p style="color: #9ca3af;">
 				Quinoa is a Quarkus extension which eases the development, the build and serving of single page apps or
-				web components (built with npm : React, Angular, Vue, Lit, Svelte, Astro, SolidJS …) alongside Quarkus.
+				web components.
+			</p>
+			<p style="color: #9ca3af;">
 				It is possible to use it with a Quarkus backend in a single project.
 			</p>
 		</div>
 
-	</div>
+		<script type="module" src="/src/main.js"></script>
 
-	<script type="module" src="/main.js"></script>
-
-</body>
+	</body>
 
 </html>

@@ -1,4 +1,4 @@
-package com.arcticsoft;
+package greeting;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

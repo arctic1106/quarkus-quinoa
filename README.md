@@ -21,14 +21,3 @@ It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
 It’s not an _über-jar_ and dependencies are copied into the `target/quarkus-app/lib/` directory.
 The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
 
-## Creating a native executable
-You can create a native executable using:
-```shell script
-./mvnw package -Dnative
-```
-
-## Or you can run the native executable build in a container using:
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-You can then execute your native executable with: `./target/code-with-quarkus-1.0.0-SNAPSHOT-runner`

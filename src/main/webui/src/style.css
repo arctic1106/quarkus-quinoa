@@ -1,38 +1,38 @@
 @import "tailwindcss";
 
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .logo {
-	@apply h-24 p-6 transition-[filter] duration-300;
+    @apply h-24 p-6 transition-[filter] duration-300;
 }
 
 .logo:hover {
-	@apply drop-shadow-[0_0_2em_#f7df1eaa];
+    @apply drop-shadow-[0_0_2em_#f7df1eaa];
 }
 
 .logo.vanilla:hover {
-	@apply drop-shadow-[0_0_2em_#646cffaa];
+    @apply drop-shadow-[0_0_2em_#646cffaa];
 }
 
 button:focus,
 button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
+    outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
 }
